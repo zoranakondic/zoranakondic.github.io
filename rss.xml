@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" encoding = "UTF-8">
+<channel>
+    <title>Coffee&Cake RSS</title>
+        <link>https://zoranakondic.github.io/rss.xml</link>
+        <description/>
+    <item>
+        <title>Dobrodošli</title>
+            <link>https:https://zoranakondic.github.io/index.html#onama</link>
+            <description>Nešto o nama</description>
+        </item>
+    <item>
+        <title>Kontakt</title>
+            <link>https:https://zoranakondic.github.io/pages/kontakt.html</link>
+            <description>Vaš utisak</description>
+    </item>
+</channel>
+</rss>
+
+
