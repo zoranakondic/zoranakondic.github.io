@@ -227,7 +227,7 @@ a.effect-underline:after {
   height: inherit;
   background-color: rgba(255,255,255, .80);
   color: #3a3535;
-  padding: 40px;
+  padding: 15%;
 }
 
 
