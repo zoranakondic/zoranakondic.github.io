@@ -1,0 +1,236 @@
+$white: #fff;
+$blue: #2c438a;
+$gray: #dee2e6;
+$gray-dark: #45505b;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.grow {
+  padding: 10px 20px;
+  border-radius: 50px;
+  height: 56px;
+  width: 56px;
+  position: relative;
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  overflow: hidden;
+  transition: 1.5s;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  text-decoration: none;
+  align-content: flex-start;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: $gray;
+  color: $blue;
+}
+
+.grow i {
+  margin-right: 30px;
+}
+
+.grow:hover {
+  width: 150px;
+  background-color: $blue;
+  color: $gray;
+}
+
+.grow {
+  background-color: $gray;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  ul {
+    position: fixed;
+    list-style: none;
+  }
+}
+
+#pocetna {
+  width: 100%;
+  background-image: url("../images/sajt\ slika.jpg");
+  height: 800px;
+  background-position: right;
+
+
+  .transparentnost {
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    width: 100%;
+    height: 1000px;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: $gray-dark;
+  width: 100%;
+}
+
+#about h1 {
+  color: $blue;
+  font-size: 30px;
+}
+
+#opis {
+  text-align: justify;
+  width: 50%;
+}
+
+.wrapper {
+  width: 70%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slika {
+  width: 50%;
+}
+
+.slika img {
+  width: 350px;
+}
+
+.omeni1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.opis_wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 35px;
+}
+
+.opis_wrapper i,
+strong {
+  color: $blue;
+}
+
+.skills {
+  @extend #about;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.levi_skilovi,
+.desni_skilovi {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ime_procenti,
+.linija {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ime_procenti {
+  margin-bottom: 10px;
+}
+
+.procenat90 {
+  width: 90%;
+}
+
+.procenat70 {
+  width: 70%;
+}
+
+.procenat60 {
+  width: 60%;
+}
+
+.procenat50 {
+  width: 50%;
+}
+
+.procenat55 {
+  width: 55%;
+}
+
+.procenat45 {
+  width: 45%;
+}
+
+.procenat40 {
+  width: 40%;
+}
+
+.procenat30 {
+  width: 30%;
+}
+
+.procenat10 {
+  width: 10%;
+}
+
+.skill_wrapper {
+  width: 80%;
+  display: flex;
+  margin: 0px auto;
+
+  .skill1,
+  .skill2 {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px 0px;
+  }
+}
+
+.levalinija,
+.desnalinija {
+  height: 10px;
+}
+
+.levalinija {
+  background-color: $blue;
+
+}
+
+.desnalinija {
+  background-color: $gray;
+}
+
+#projects h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: $blue;
+}
+
+.projekti img {
+  width: 40%;
+  height: 300px;
+}
+
+.projekti {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
