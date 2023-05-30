@@ -4,6 +4,10 @@
         flex-direction: column;
     }
 
+    .projekat div a img {
+        width: 490px;
+    }
+
 }
 
 
@@ -15,6 +19,17 @@
     .wrapper {
         width: 60%;
     }
+
+    .projekat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projekat div a img {
+        width: 800px;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -26,16 +41,34 @@
         width: 80%;
     }
 
+    .skill_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .desni_skilovi {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .desni_skilovi .skill1 {
+        align-items: flex-start;
+    }
+
+
+    .skill1 {
+        width: 45% !important;
+    }
+
     .projekti {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .projekti img {
-        margin: 10px 0px;
-        height: 250px;
+    .projekat div a img {
+        width: 500px;
     }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -46,6 +79,14 @@
         align-content: flex-start;
         width: 100%;
         list-style: none;
+    }
+
+    .grow:hover {
+        width: 56px;
+    }
+
+    nav ul li h2 {
+        display: none;
     }
 
     nav {
@@ -72,13 +113,21 @@
         align-items: center;
     }
 
-    .projekti img {
-        width: 50%;
-        height: 250px;
+    .skill1 {
+        width: 90% !important;
     }
 
-}
+    .projekat div a img {
+        width: 500px;
+    }
 
+    #ime,
+    #prezime,
+    #email,
+    #poruka {
+        width: 380px;
+    }
+}
 
 
 @media only screen and (max-width: 590px) {
@@ -87,21 +136,30 @@
         width: 95%;
     }
 
-    .projekti img {
+    .projekti div a img {
         width: 300px;
-        height: 200px;
+    }
+
+    .projekat div a img {
+        width: 400px;
     }
 }
 
 @media only screen and (max-width: 410px) {
-    .grow {
-        height: 44px;
-        width: 44px;
-    }
 
     .grow i {
         margin: 0px auto;
     }
 
+    .projekat div a img {
+        width: 300px;
+    }
+
+    #ime,
+    #prezime,
+    #email,
+    #poruka {
+        width: 320px;
+    }
 
 }
