@@ -1,4 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -47,6 +50,7 @@ nav {
   align-items: center;
   height: 100vh;
 }
+
 nav ul {
   position: fixed;
   list-style: none;
@@ -58,13 +62,18 @@ nav ul {
   height: 800px;
   background-position: right;
 }
+
 #pocetna .transparentnost {
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100% !important;
   height: 1000px;
+  display: flex;
+  align-items: center;
 }
 
-#about, .skills {
+#about,
+#contact h1,
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +82,9 @@ nav ul {
   width: 100%;
 }
 
-#about h1, .skills h1 {
+#about h1,
+#contact h1 h1,
+.skills h1 {
   color: #2c438a;
   font-size: 30px;
 }
@@ -97,6 +108,7 @@ nav ul {
 
 .slika img {
   width: 350px;
+  border-radius: 5px 30px;
 }
 
 .omeni1 {
@@ -122,8 +134,8 @@ strong {
   margin-top: 20px;
 }
 
-.levi_skilovi,
-.desni_skilovi {
+.skill1,
+.skill2 {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -180,13 +192,15 @@ strong {
 .skill_wrapper {
   width: 80%;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 0px auto;
 }
-.skill_wrapper .skill1,
-.skill_wrapper .skill2 {
+
+.skill_wrapper .skill1 {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 30%;
   margin: 30px 0px;
 }
 
@@ -211,13 +225,125 @@ strong {
   color: #2c438a;
 }
 
-.projekti img {
-  width: 40%;
-  height: 300px;
+.projekat div a img {
+  width: 580px;
+  filter: grayscale(100%);
+  border-radius: 5px 30px;
 }
 
-.projekti {
+.projekat div a img:hover {
+  transition: linear 500ms;
+  filter: grayscale(0%);
+}
+
+.projekat {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}/*# sourceMappingURL=style.css.map */
+}
+
+#contact h1 {
+  font-size: 30px;
+  color: #2c438a;
+  margin: 40px 0px;
+}
+
+#Kontakt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#ime,
+#prezime,
+#email,
+#poruka {
+  border: none;
+  border-bottom: 2px solid #2c438a;
+  width: 600px;
+  border-color: #2c438a;
+}
+
+textarea {
+  resize: none;
+}
+
+#posalji {
+  border-radius: 2px 5px;
+  color: #2c438a;
+  padding: 15px 20px;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #2c438a;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+
+.social .sassSitemap {
+  display: flex;
+  color: #fff;
+}
+
+.social {
+  margin-left: 40px;
+}
+
+.social i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.sassSitemap {
+  margin-right: 40px;
+}
+
+.sassSitemap i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.copyright p {
+  align-items: center;
+  color: #fff;
+}
+
+.animation {
+  display: flex;
+  margin: 10px auto;
+}
+
+.animation p {
+  font-size: 32px;
+  color: #2c438a;
+}
+
+.animation {
+  overflow: hidden;
+  /* Skriva prelazeći tekst */
+  border-right: 0.15em solid #000;
+  /* Animira vertikalnu crtu */
+  white-space: nowrap;
+  /* Osigurava da se tekst ne lomi */
+  margin: 0 auto;
+  /* Centrira naslov */
+  letter-spacing: 0.15em;
+  /* Razmak između slova */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 10px;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
