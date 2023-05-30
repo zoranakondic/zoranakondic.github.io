@@ -6,6 +6,7 @@ $gray-dark: #45505b;
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+
 * {
   margin: 0px;
   padding: 0px;
@@ -68,9 +69,12 @@ nav {
 
 
   .transparentnost {
-    background-color: rgba($color: #fff, $alpha: 0.2);
-    width: 100%;
+    background-color: rgba($color: #fff, $alpha: 0.6);
+    width: 100% !important;
     height: 1000px;
+    display: flex;
+    align-items: center;
+
   }
 }
 
@@ -107,6 +111,7 @@ nav {
 
 .slika img {
   width: 350px;
+  border-radius: 5px 30px;
 }
 
 .omeni1 {
@@ -133,8 +138,8 @@ strong {
   margin-top: 20px;
 }
 
-.levi_skilovi,
-.desni_skilovi {
+.skill1,
+.skill2 {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -191,13 +196,14 @@ strong {
 .skill_wrapper {
   width: 80%;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 0px auto;
 
-  .skill1,
-  .skill2 {
+  .skill1 {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 30%;
     margin: 30px 0px;
   }
 }
@@ -224,13 +230,98 @@ strong {
   color: $blue;
 }
 
-.projekti img {
-  width: 40%;
-  height: 300px;
+.projekat div a img {
+  width: 580px;
+  filter: grayscale(100%);
+  border-radius: 5px 30px;
 }
 
-.projekti {
+.projekat div a img:hover {
+  transition: linear 500ms;
+  filter: grayscale(0%);
+}
+
+.projekat {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+#contact h1 {
+  @extend #about;
+  font-size: 30px;
+  color: $blue;
+  margin: 40px 0px;
+}
+
+
+#Kontakt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.border {
+  border: none;
+  border-bottom: 2px solid $blue;
+  width: 600px;
+  border-color: $blue;
+}
+
+#ime,
+#prezime,
+#email,
+#poruka {
+  @extend border
+}
+
+textarea {
+  resize: none;
+}
+
+#posalji {
+  border-radius: 2px 5px;
+  color: $blue;
+  padding: 15px 20px;
+  background-color: $white;
+}
+
+footer {
+  background-color: $blue;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+
+.social .sassSitemap {
+  display: flex;
+  color: $white;
+  margin: 10px 0px;
+}
+
+.social {
+  margin-left: 40px;
+
+  i {
+    font-size: 30px;
+    color: $white;
+
+  }
+}
+
+.sassSitemap {
+  margin-right: 40px;
+
+  i {
+    font-size: 30px;
+    color: $white;
+  }
+}
+
+.copyright p {
+  align-items: center;
+  color: $white;
 }
