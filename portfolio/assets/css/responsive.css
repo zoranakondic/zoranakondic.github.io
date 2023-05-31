@@ -167,5 +167,9 @@
     #poruka {
         width: 320px;
     }
+    
+     .naslov1 {
+        font-size: 6px;
+    }
 
 }
