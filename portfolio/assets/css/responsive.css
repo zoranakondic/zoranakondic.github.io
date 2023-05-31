@@ -147,6 +147,11 @@
     .projekat div a img {
         width: 400px;
     }
+    
+    .naslov1 {
+        font-size: 8px;
+    }
+}
 }
 
 @media only screen and (max-width: 410px) {
