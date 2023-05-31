@@ -127,6 +127,10 @@
     #poruka {
         width: 380px;
     }
+    
+    .naslov1 {
+        font-size: 10px;
+    }
 }
 
 
