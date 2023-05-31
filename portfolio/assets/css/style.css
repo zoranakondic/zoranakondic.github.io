@@ -370,6 +370,7 @@ footer {
   -webkit-animation-delay: 2s;
   animation: slide 0.5s forwards;
   animation-delay: 2s;
+  margin-top: 400px;
 }
 @keyframes slide {
   100% {
