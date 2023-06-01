@@ -150,7 +150,7 @@
     }
     
      .projekat div a img {
-        width: 400px;
+        width: 360px;
     }
 }
 
@@ -158,10 +158,6 @@
 
     .grow i {
         margin: 0px auto;
-    }
-
-    .projekat div a img {
-        width: 300px;
     }
 
     #ime,
@@ -173,6 +169,10 @@
     
      .naslov1 {
         font-size: 6px;
+    }
+    
+      .projekat div a img {
+        width: 300px;
     }
 
 }
