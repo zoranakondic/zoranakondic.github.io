@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@300&family=Raleway:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#logo img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+#zaglavlje {
+    background-color: #ab876c;
+}
+
+#slova ul li a {
+    color: #fff;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 80vh;
+}
+
+#slide1,
+#slide2,
+#slide3 {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.lslika1,
+.slika12,
+.lslika3 {
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.lslika1 {
+    background-image: url("../images/lslika1.jpg") !important;
+}
+
+.slika12 {
+    background-image: url("../images/slika12.jpg") !important;
+}
+
+.lslika3 {
+    background-image: url("../images/lslika3.jpg") !important;
+}
+
+.nav-link:hover {
+    text-decoration: underline solid #fff;
+}
+
+
+
+
+.slika1 {
+    background-image: url("../images/slika1.jpg") !important;
+}
+
+.slika2 {
+    background-image: url("../images/slika2.jpg") !important;
+}
+
+.slika3 {
+    background-image: url("../images/slika3.jpg") !important;
+}
+
+.slika4 {
+    background-image: url("../images/slika4.jpg") !important;
+}
+
+.slika5 {
+    background-image: url("../images/slika5.jpg") !important;
+}
+
+.slika6 {
+    background-image: url("../images/slika6.jpg") !important;
+}
+
+.slika7 {
+    background-image: url("../images/slika7.jpg") !important;
+}
+
+.slika8 {
+    background-image: url("../images/slika8.jpg") !important;
+}
+
+.slika9 {
+    background-image: url("../images/slika9.jpg") !important;
+}
+
+.slika10 {
+    background-image: url("../images/slika10.jpg") !important;
+}
+
+.slika11 {
+    background-image: url("../images/slika11.jpg") !important;
+}
+
+.slika12 {
+    background-image: url("../images/slika12.jpg") !important;
+}
+
+
+.wrapper {
+    position: relative;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+
+.front {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 1em;
+    background: #313131;
+    border-radius: 10px;
+}
+
+
+.front {
+    filter: grayscale(100%);
+}
+
+.front:hover {
+    animation-name: grayscale;
+    animation-duration: 1s;
+}
+
+@keyframes grayscale {
+    from {
+        filter: grayscale(100%)
+    }
+
+    to {
+        filter: grayscale(0%)
+    }
+}
+
+
+#rezervacija {
+    margin-top: 40px;
+}
+
+.dugme {
+    background-color: #ab876c;
+    color: #fff;
+}
+
+.dugme:hover {
+    background-color: #ab875b;
+}
+
+#autorslika {
+    margin-top: 50px;
+}
+
+#autorslika img {
+    border-radius: 20px;
+    border: 2px solid #ab876c;
+}
+
+#autorslika h2 {
+    border-bottom: 4px solid #ab876c;
+}
+
+#tekstautor {
+    border-bottom: 3px solid #ab876c;
+}
