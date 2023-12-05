@@ -23,10 +23,8 @@ header {
 
 
 #logo {
-  width: 25%;
+  /* width: 25%; */
   float: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 
@@ -35,9 +33,17 @@ header {
 }
 
 
-#logo a h1 {
-  color: #292b2a;
-  font-family: 'Marcellus', serif;
+.link {
+  background-image: url("../../images/logo.jpg");
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+#logo a img {
+  width: 120px;
+  border-radius: 20px;
 }
 
 nav {
@@ -514,5 +520,3 @@ textarea {
   /* Safari 3-8 */
   transform: scale(1.1);
 }
-
-
