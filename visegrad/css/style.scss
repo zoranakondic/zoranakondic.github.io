@@ -561,6 +561,33 @@ a:focus {
 
 // end service section
 
+.sakrij{
+  visibility: hidden;
+}
+
+.scrollToTop{
+  bottom: 60px;
+  color: #fff;
+  display: none;
+  font-size: 30px;
+  line-height: 50px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 55px;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #e45441;
+  border: 2px solid #e45441;
+}
+
 
 // blog section
 .blog_section {
@@ -894,4 +921,30 @@ a:focus {
   background-color: transparent;
   color:#e45441;
   border: 1px solid #e45441;
+}
+
+
+// ScrollBar
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.progress-container {
+  background-color: rgba(150, 150, 150, 0.6);
+  height: 10px;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: #e45441;
+  height: 10px;
+  width: 0%;
+}
+
+.content {
+  padding: 2em;
 }
