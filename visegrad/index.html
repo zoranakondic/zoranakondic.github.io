@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="icon" href="images/favicon.png" type="image/gif" />
 
-  <title>Shapel</title>
+  <title>Višegrad</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -31,9 +31,22 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <script src="https://kit.fontawesome.com/9414c76ad8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+ 
+  <!-- DugmeBackToTop -->
+  <a class="scrollToTop" href="#" id="scrollUp" style="display: block;">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- ScrollBar -->
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
 
   <!-- header section strats -->
   <header class="header_section">
@@ -41,11 +54,10 @@
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
           <span>
-            Shapel
+            Višegrad
           </span>
         </a>
         <div class="" id="">
-
           <div class="custom_menu-btn">
             <button onclick="openNav()">
               <span class="s-1"> </span>
@@ -54,12 +66,13 @@
             </button>
             <div id="myNav" class="overlay">
               <div class="overlay-content">
-                <a href="#">Home</a>
-                <a href="#sectionAbout" onclick="closeNav()">About</a>
-                <a href="#gallerySection" onclick="closeNav()">Gallery</a>
-                <a href="#servicesSection" onclick="closeNav()">Service</a>
-                <a href="#testimonialSection" onclick="closeNav()">Testimonial</a>
-                <a href="#contactSection" onclick="closeNav()">Contact</a>
+                <a href="#">Pocetna</a>
+                <a href="#sectionAbout" onclick="closeNav()">O Nama</a>
+                <a href="#gallerySection" onclick="closeNav()">Galerija</a>
+                <a href="#servicesSection" onclick="closeNav()">Usluge</a>
+                <a href="#testimonialSection" onclick="closeNav()">Komentari</a>
+                <a href="#contactSection" onclick="closeNav()">Kontakt</a>
+                <a href="oAutoru.html" onclick="closeNav()">O autoru</a>
               </div>
             </div>
           </div>
@@ -110,16 +123,15 @@
       <div class="col-md-8 col-lg-6 mx-auto">
         <div class="inner_detail-box">
           <h1>
-            Interior Design <br>
-            Studio
+            Smeštaj <br>
+            Višegrad
           </h1>
           <p>
-            It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem
+            Osetite duh Višegrada. Kontaktirajte nas i rezervišite svoj boravak, gde se tradicija susreće sa udobnošću, stvarajući nezaboravno iskustvo.
           </p>
           <div>
             <a href="#contactSection" class="slider-link">
-              KONTAKT
+              REZERVACIJA
             </a>
           </div>
         </div>
@@ -142,11 +154,13 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Us
+                O Nama
               </h2>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.
+              "Dobrodošli u smeštaj "Visegrad" - vaša oaza autentičnosti u samom srcu ovog prelepog grada!
+               Naš smeštaj predstavlja spoj bogate tradicije i suptilne elegancije, pružajući vam nezaboravno iskustvo boravka u Višegradu. 
+               Svaka soba pažljivo je uređena kako bi odisala toplinom i udobnošću, stvarajući prijatan prostor za vaš odmor.
             </p>
             <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#exampleModalCenter">
               Read more
@@ -161,7 +175,14 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    Tekst modala
+                   
+                    Dobrodošli u Višegrad, biser istočne Bosne i mesto gde se prošlost susreće sa sadašnjošću! Ovaj grad odiše istorijom, a njegova najpoznatija atrakcija, Most na Drini, izgrađen u 16. veku, ponosno svedoči o spoju osmanske arhitekture i prirodne lepote reke Drine.
+
+                    U srcu ovog bajkovitog grada, smeštaj "Visegrad" nudi vam jedinstvenu priliku da se uronite u andrićevsku atmosferu. Naša udobna i elegantna oaza pruža miran beg od užurbanosti, dok istovremeno omogućava lako istraživanje lokalnih čuda.
+
+                    Zalazak sunca na Andrićgradskom mostu, uz čuveni Drinski vitez koktel u ruci, postaje nezaboravno iskustvo koje možete doživeti tokom boravka u smeštaju "Visegrad". Osim toga, uživajte u raznovrsnim lokalnim specijalitetima u obližnjim restoranima, istražujući ukuse i mirise tradicionalne bosanske kuhinje.
+
+                    Osetite ritam Višegrada, gde se istorija isprepliće sa savremenim udobnostima. Rezervišite svoj boravak u smeštaju "Visegrad" i doživite spoj autentičnosti i komfora u ovom čarobnom gradu na Drini.
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -183,7 +204,7 @@
     <div class="container-fluid">
       <div class="heading_container heading_center">
         <h2>
-          Gallery
+         GAlerija
         </h2>
       </div>
       <div class="row" id="galleryWrapper">
@@ -253,61 +274,65 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Services
+          Usluge
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="images/s1.jpg" alt="">
+              <img src="images/s1.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
-                Residential Decoration
+                Manastir Dobrun
               </h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque distinctio aspernatur officiis exercitationem asperiores praesentium
+                Manastir Dobrun, izgrađen u 14. veku blizu Višegrada, predstavlja istorijski i duhovni biser s prelepim freskama u crkvi.
+                 Njegova mirna atmosfera i izuzetna kulturna vrednost čine ga nezaobilaznom destinacijom za posetioce.
               </p>
-              <a href="">
+              <!-- <a href="">
                 Read More
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="images/s2.jpg" alt="">
+              <img src="images/s2.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
-                Ecommercial Decoration
+                Krstarenje Drinom
               </h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque distinctio aspernatur officiis exercitationem asperiores praesentium
-              </p>
-              <a href="">
+                Krstarite Drinom i doživite jedinstvenu avanturu kroz pejzaže i istorijske mostove.
+                Plovidba pruža nezaboravno iskustvo, omogućavajući vam da istražite prirodnu lepotu i bogatu kulturnu baštinu regije sa mirnim tokom reke.
+               </p>
+              <!-- <a href="">
                 Read More
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="images/s3.jpg" alt="">
+              <img src="images/s3.png" alt="">
             </div>
             <div class="detail-box">
               <h5>
-                Office Decoration
+                Andrićgrad
               </h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque distinctio aspernatur officiis exercitationem asperiores praesentium
+                Andrićgrad,predstavlja kulturni kompleks u Višegradu.
+                 Ovaj autentični grad, inspirisan delima slavnog pisca, oživljava duh prošlih vremena kroz arhitekturu i atmosferu, 
+                 čineći ga neizostavnim mestom za ljubitelje književnosti i istorije.
               </p>
-              <a href="">
+              <!-- <a href="">
                 Read More
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -378,7 +403,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Testimonial
+          Komentari
         </h2>
       </div>
       <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
@@ -388,18 +413,18 @@
               <div class="col-md-11 col-lg-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
+                    <img src="images/client1.jpg" alt="" />
                   </div>
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Siaalya
+                        Mihajlo
                       </h6>
                     </div>
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
+                      Savršen boravak u smeštaju! Ovaj dragulj u Višegradu nas je očarao. Sobu smo rezervisali sa balkonom i pogledom na Drinu -
+                       prizor koji ostavlja bez daha. Udobnost kreveta, čistoća i ljubaznost osoblja su na najvišem nivou.
+                       Restoran u sklopu smeštaja nudi fantastična jela. Definitivno preporučujemo svima!
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -412,18 +437,18 @@
               <div class="col-md-11 col-lg-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
+                    <img src="images/client2.jpg" alt="" />
                   </div>
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Siaalya
+                        Petra
                       </h6>
                     </div>
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
+                      Oduševljena sam smeštajem u Višegradu! Osećala sam se kao da sam zakoračila u bajku - 
+                      svaka soba odiše autentičnim šarmom. Osoblje je izuzetno ljubazno, spremno da ispuni svaku našu želju.
+                       Pogled s terase je fascinantan, posebno u zalazak sunca. Ovo mesto je pravi dragulj, definitivno se vraćam!
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -436,18 +461,18 @@
               <div class="col-md-11 col-lg-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
+                    <img src="images/client3.jpg" alt="" />
                   </div>
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Siaalya
+                        Katarina
                       </h6>
                     </div>
                     <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
+                      Višegrad,čarobna destinacija, dobija posebnu notu uz smeštaj. 
+                      Očaravajuća atmosfera grada, prelepa priroda i udobnost smeštaja čine boravak nezaboravnim. Lokacija je idealna - 
+                      sve je na dohvat ruke, od čuvenog mosta do Andrićgrada i sjajnih restorana. Preporučujem svima koji traže spoj mira, autentičnosti i praktičnosti!
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -480,25 +505,47 @@
           <div class="form_container">
             <div class="heading_container ">
               <h2>
-                Contact Us
+                Rezervišite
               </h2>
             </div>
-            <form action="">
+            <form>
               <div>
-                <input type="text" placeholder="Your Name" />
+                <span class="greska sakrij" id="upozorenjeIme">Niste uneli ime i prezime</span>
+                <input type="text" id="fullName" placeholder="Ime i prezime" />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <span class="greska sakrij" id="upozorenjeTelefon">Niste uneli broj telefona</span>
+                <input type="text" id="number" placeholder="Broj telefona" />
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <span class="greska sakrij" id="upozorenjeEmail">Niste uneli email</span>
+                <input type="email" id="email" placeholder="Email" />
+                
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                
+                <select id="numberOfGuests">
+                  <option value="0">Izaberite broj gostiju</option>
+                  <option value="1">1 osoba</option>
+                  <option value="2">2 osoba</option>
+                  <option value="3">3 osoba</option>
+                  <option value="4">4 osoba</option>
+                  <option value="5">5 osoba</option>
+                  <option value="6">6 osoba</option>
+                </select>
+                <span class="greska sakrij" id="upozorenjeGosti">Niste izabrali broj gostiju</span>
+              </div><br>
+              <div>
+                <span class="greska sakrij" id="upozorenjeDatum">Niste izabrali datum rezervacije</span>
+                <input type="date" id="dateOfReservation"/>
+              </div>
+              <div>
+                <span class="greska sakrij" id="upozorenjePoruka">Niste uneli poruku</span>
+                <input type="text" id="message" class="message-box" placeholder="Poruka" />    
               </div>
               <div class="btn_box">
-                <button>
-                  SEND
+                <button type="button" onclick="proveriFormu()">
+                  Pošalji
                 </button>
               </div>
             </form>
@@ -507,17 +554,17 @@
         <div class="col-md-5 col-lg-6">
           <div class="subscribe-box">
             <h3>
-              Subscribe To Our Newsletter
+              Rezervišite svoj odmor na vreme.
             </h3>
-            <p>
+            <!-- <p>
               Neque, omnis? Maiores consectetur molestiae assumenda earum ea exercitationem velit tempora molestias quae, neque voluptas magnam maxime, repudiandae voluptatum quaerat tempore accusamus.
-            </p>
-            <form action="">
+            </p> -->
+            <!-- <form action="">
               <input type="email" placeholder="Enter your email">
               <button>
                 Subscribe
               </button>
-            </form>
+            </form> -->
           </div>
         </div>
       </div>
@@ -530,7 +577,7 @@
     <div class="container">
       <div class="row info_main_row">
         <div class="col-md-6 col-lg-3">
-          <div class="info_insta">
+          <!-- <div class="info_insta">
             <h4>
               <a href="index.html" class="navbar-brand m-0 p-0">
                 <span>
@@ -541,46 +588,56 @@
             <p class="mb-0">
               Asperiores at, error, delectus aut voluptatem provident cum quam magni necessitatibus molestias eveniet reprehenderit maiores voluptate.
             </p>
-          </div>
+          </div> -->
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_detail">
+        
+          <div class="col-md-6 col-lg-3">
             <h4>
-              Company
+              Dodatni linkovi
             </h4>
-            <p class="mb-0">
-              when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-            </p>
+            <div class="social_box">
+              <a href="">
+                <i class="fa-solid fa-sitemap"></i>
+              </a>
+              <a href="">
+                <i class="fa-solid fa-robot"></i>
+              </a>
+              <a href="">
+                <i class="fa-solid fa-file"></i>
+              </a>
+             
+            </div>
           </div>
-        </div>
+
+  
         <div class="col-md-6 col-lg-3">
           <h4>
-            Contact Us
+            Kontakt
           </h4>
           <div class="info_contact">
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Location
+                Zdravka Čelara 16
               </span>
             </a>
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call +01 1234567890
+                064112233
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope"></i>
               <span>
-                demo@gmail.com
+                apartmani@gmail.com
               </span>
             </a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <h4>
-            Follow Us
+            Pratite Nas
           </h4>
           <div class="social_box">
             <a href="">
@@ -609,7 +666,7 @@
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        <a href="oAutoru.html"></a>
       </p>
     </div>
   </footer>
