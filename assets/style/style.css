@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -245,15 +246,14 @@ body:active * {
 
 .tekst-slika1 {
   width: 900px;
+  line-height: 1.4;
   border: 1px solid #fff;
   color: #fff;
   border-radius: 15px;
   background-color: rgba(82, 117, 88, 0.75);
-  padding-top: 30px;
-  padding-bottom: 30px;
   margin-right: 45px;
   margin-left: 20px;
-  padding-left: 10px;
+  padding: 30px;
 }
 
 .tekst-slika1 h2 {
@@ -278,7 +278,7 @@ body:active * {
   border: 1px solid white;
   border-radius: 15px;
   background-color: rgba(82, 117, 88, 0.75);
-  padding: 55px;
+  padding: 30px;
   color: #fff;
   line-height: 1.4;
   text-indent: 45px;
@@ -356,7 +356,7 @@ footer {
 /* Galerija */
 
 #galerija {
-  background-color: #fff;
+  background-color: #ede8e2;
   width: 100%;
 }
 
@@ -411,7 +411,7 @@ slikepetired {
 
 .forma {
   width: 100%;
-  background-color: #fff;
+  background-color: #ede8e2;
   display: flex;
   justify-content: space-around;
   padding: 100px;
@@ -490,6 +490,7 @@ textarea {
   padding: 45px;
   box-sizing: border-box;
   margin: 20px 20px;
+  height: 75vh;
 }
 
 #bodyoautoru p {
