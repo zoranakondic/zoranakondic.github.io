@@ -446,10 +446,13 @@ textarea {
   object-fit: cover;
   transition: transform .5s;
   border-radius: 5px;
+  border:1px solid #3e5c4c;
   margin-left: 80px;
 }
 
 #posalji:hover {
+  color:#fff;
+  background-color:#3e5c4c;
   -ms-transform: scale(1.1);
   /* IE 9 */
   -webkit-transform: scale(1.1);
@@ -521,4 +524,5 @@ textarea {
   /* Safari 3-8 */
   transform: scale(1.1);
 }
+
 
