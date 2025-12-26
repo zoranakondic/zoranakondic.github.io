@@ -1,27 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9%22%3E">
-    <url>
-        <loc>https://zoranakondic.github.io/index.html</loc>
-        <lastmod>2023-12-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>https://zoranakondic.github.io/pages/galerija.html</loc>
-        <lastmod>2023-12-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://zoranakondic.github.io/pages/kontakt.html</loc>
-        <lastmod>2023-12-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https:https://zoranakondic.github.io/pages/oautoru.html</loc>
-        <lastmod>2023-12-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://zoranakondic.github.io/index.html</loc>
+<lastmod>2025-20-12</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://zoranakondic.github.io/index.html#onama</loc>
+<lastmod>2025-20-12</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://zoranakondic.github.io/pages/galerija.html</loc>
+<lastmod>2025-20-12</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://zoranakondic.github.io/pages/kontakt.html</loc>
+<lastmod>2025-20-12</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://zoranakondic.github.io/pages/oautoru.html</loc>
+<lastmod>2025-20-12</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
 </urlset>
