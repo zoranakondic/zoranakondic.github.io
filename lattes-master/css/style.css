@@ -66,7 +66,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #c7a17a;
 }
 
 a,
@@ -79,7 +79,7 @@ a.active {
 
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #c7a17a;
 }
 
 @media (min-width: 768px) {
@@ -119,8 +119,8 @@ section {
 }
 
 .navbar-default .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136
+    background-color: #c7a17a;
+    border-color: #c7a17a
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -129,7 +129,7 @@ section {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136
+    background-color: #c7a17a
 }
 
 .navbar-default .nav li a {
@@ -142,7 +142,7 @@ section {
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    color: #fed136;
+    color: #c7a17a;
     outline: 0
 }
 
@@ -213,8 +213,6 @@ header::after {
     background: rgba(0, 0, 0, 0.25);
 }
 
-
-
 .intro-heading,
 .intro-lead-in,
 .intro-text {
@@ -228,6 +226,22 @@ header {
     align-items: center;
     text-align: center;
 }
+
+.intro-heading {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    font-family: serif;
+}
+
+
+
+
 
 /* header {
     background-image: url(../images/demo/slika1.jpg);
@@ -290,9 +304,16 @@ header .intro-text .intro-heading {
     }
 } */
 
-/*--------------------
-4. Sections
---------------------*/
+
+
+
+
+
+
+
+
+
+/*4. Sections*/
 
 .section-title h2 {
     font-size: 34px;
@@ -306,9 +327,9 @@ header .intro-text .intro-heading {
     margin: 20px 100px 60px 100px;
 }
 
-/*--------------------
-4.1. About
---------------------*/
+
+/*4.1. About*/
+
 
 
 
@@ -353,21 +374,31 @@ header .intro-text .intro-heading {
 }
 
 
+#services-info h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 
+.salon-services {
+    list-style: none;
+    font-size: 16px;
+    padding: 0;
+}
 
+.salon-services li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.salon-services li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #c7a17a;
+}
 
 
 
@@ -432,11 +463,49 @@ header .intro-text .intro-heading {
     height: 3px;
 } */
 
-/*--------------------
-4.3. Portfolio
---------------------*/
+/*4.3. Galerija*/
 
-figure {
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    filter: brightness(60%);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.portfolio-item:hover img {
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    transition: .4s ease;
+}
+
+.mb-4 {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+/* figure {
     position: relative;
     overflow: hidden;
     margin: 10px 1%;
@@ -548,11 +617,9 @@ figure.effect-bubba:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-}
+} */
 
-/*--------------------
-4.4. Dark Short section (counters, quote, etc)
---------------------*/
+/*4.4. Deo nabrajanje*/
 
 .dark-bg {
     background: #323232;
@@ -560,7 +627,7 @@ figure.effect-bubba:hover p {
 }
 
 .bg-img1 {
-    background-image: url(../images/demo/office-bg.jpg);
+    background-image: url(../images/demo/pozadina.jpg);
     background-size: cover !important;
     background-position: center center;
     background-repeat: no-repeat;
@@ -606,31 +673,56 @@ figure.effect-bubba:hover p {
     margin: 0;
 }
 
-/*--------------------
-4.5. Partners Slider
---------------------*/
+
+
+/*4.5. Partneri */
+
+#partneri {
+    padding: 60px 0;
+}
+
+#partner-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 30px;
+}
 
 .partner-logo {
-    height: 80px;
+    width: 80px;
+    opacity: 0.9;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/*4.6. Tim*/
+
+
+.team-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
     text-align: center;
 }
 
-.partner-logo img {
-    height: 100%;
-    width: auto !important;
+.team-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/*--------------------
-4.6. Team
---------------------*/
 
-.team-item {
+
+/* .team-item {
     text-align: center;
     background-color: #fff;
 }
 
 .team-item h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -652,15 +744,13 @@ figure.effect-bubba:hover p {
 }
 
 .team-item p {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 300;
     color: #9C9C9C;
     padding: 5px 10px 20px 10px;
-}
+} */
 
-/*--------------------
-4.7. Contacts
---------------------*/
+/*4.7. Contacts*/
 
 section#contact form {
     margin-top: 15px;
@@ -697,11 +787,66 @@ section#contact .form-group textarea {
     margin-right: 5px;
 }
 
-/*--------------------
-5. Footer
---------------------*/
+
+
+/*5. Footer*/
+
+
 
 footer {
+    background: #2D2D2D;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left a,
+.footer-right a {
+    color: white;
+    margin-right: 10px;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.footer-center p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #c7a17a;
+}
+
+.footer-left {
+    margin-left: 20px;
+}
+
+.footer-right {
+    margin-right: 20px;
+}
+
+.navbar-brand img {
+    width: 180px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: -5px;
+    margin-top: -35px;
+}
+
+
+
+
+
+
+
+
+
+/* footer {
     padding: 30px;
     background-color: #000;
 }
@@ -720,11 +865,11 @@ footer p a {
 }
 
 footer p a span {
-    color: #FF9F46;
+    color: #c7a17a;
     font-size: 10px;
     letter-spacing: 1px;
     font-weight: 700;
-}
+} */
 
 /*--------------------
 6. Modal
@@ -787,8 +932,8 @@ footer p a span {
 .btn.active,
 .open .dropdown-toggle.btn {
     color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01;
+    background-color: #c7a17a;
+    border-color: #c7a17a;
 }
 
 .btn {
@@ -844,17 +989,16 @@ footer p a span {
     text-decoration: none;
     color: #FFFFFF;
     background: #A9A9B1;
-    /* background color transition */
     -webkit-transition: 1s;
     -moz-transition: 1s;
     transition: 1s;
 }
 
 #back-top a:hover {
-    background: #fed136;
+    background: #c7a17a;
 }
 
-/* arrow icon (span tag) */
+
 #back-top i {
     margin-top: 15px;
     font-size: 28px;
@@ -876,4 +1020,73 @@ footer p a span {
         margin-top: 7px;
         font-size: 20px;
     }
+}
+
+
+
+/* Autor */
+.autor-navbar {
+    background-color: #333 !important;
+    border-bottom: none;
+}
+
+.autor-navbar .navbar-nav>li>a {
+    color: white !important;
+}
+
+
+.autor-slika {
+    border-radius: 20px;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.autor-slika:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.autor-slika {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin: 100px auto 20px auto;
+    border-radius: 20px;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.autor-box {
+    margin-top: 50px;
+}
+
+.autor-slika {
+    width: 260px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.autor-ime {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.btn-vise {
+    padding: 8px 22px;
+    border-radius: 25px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.btn-vise:hover {
+    background: #c7a17a;
+}
+
+.autor-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 17px;
 }
