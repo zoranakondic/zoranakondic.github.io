@@ -242,77 +242,6 @@ header {
 
 
 
-
-/* header {
-    background-image: url(../images/demo/slika1.jpg);
-    background-repeat: none;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-    color: #fff;
-}
-
-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-@media (min-width: 768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
-}
-
-header .intro-text .intro-lead-in {
-    font-family: "Playfair Display", sans-serif;
-    font-style: italic;
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 25px;
-}
-
-@media (min-width: 768px) {
-    header .intro-text .intro-lead-in {
-        font-family: "Playfair Display", sans-serif;
-        font-style: italic;
-        font-size: 40px;
-        line-height: 40px;
-        margin-bottom: 25px;
-    }
-}
-
-header .intro-text .intro-heading {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 25px;
-}
-
-@media (min-width: 768px) {
-    header .intro-text .intro-heading {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 75px;
-        line-height: 75px;
-        margin-bottom: 50px;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
 /*4. Sections*/
 
 .section-title h2 {
@@ -401,68 +330,6 @@ header .intro-text .intro-heading {
 }
 
 
-
-
-
-
-/* .skills-text h2 {
-    margin: 0 0 30px;
-}
-
-.skillbar-item {
-    margin-bottom: 30px;
-}
-
-.skillbar {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-.skillbar-score {
-    background-color: #dfdfdf;
-    padding: 7px;
-    text-align: center;
-    color: #000000;
-    font-weight: 300;
-    float: right;
-    width: 50px;
-    height: 40px;
-    vertical-align: middle;
-}
-
-.skillbar-score .score {
-    font-size: 20px;
-}
-
-.skillbar-score .percent {
-    font-size: 13px;
-}
-
-.skillbar-bar {
-    display: block;
-    background-color: #dfdfdf;
-    height: 3px;
-    width: 100%;
-}
-
-.skillbar h3 {
-    font-weight: 600;
-    font-size: 13px;
-    text-transform: uppercase;
-    color: #3A3A3A;
-    letter-spacing: 2px;
-    margin: 0;
-    padding: 12px 0;
-}
-
-.skillbar-percent {
-    color: #fff;
-    background-color: #000000;
-    float: left;
-    height: 3px;
-} */
-
 /*4.3. Galerija*/
 
 
@@ -500,124 +367,6 @@ header .intro-text .intro-heading {
 }
 
 
-
-
-
-
-
-/* figure {
-    position: relative;
-    overflow: hidden;
-    margin: 10px 1%;
-    background: #726FB9;
-    text-align: center;
-    cursor: pointer;
-}
-
-figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.ot-portfolio-item figure figcaption>a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-}
-
-.ot-portfolio-item figure figcaption,
-.ot-portfolio-item figure figcaption>a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-figure.effect-bubba {
-    background: #000;
-    margin-bottom: 30px;
-}
-
-figure.effect-bubba img {
-    opacity: 0.8;
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-}
-
-figure.effect-bubba:hover img {
-    opacity: 0.4;
-}
-
-figure.effect-bubba figcaption::before,
-figure.effect-bubba figcaption::after {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    content: '';
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-bubba figcaption::before {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: scale(0, 1);
-    transform: scale(0, 1);
-}
-
-figure.effect-bubba figcaption::after {
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
-    -webkit-transform: scale(1, 0);
-    transform: scale(1, 0);
-}
-
-figure.effect-bubba h2 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 30%;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(0, -20px, 0);
-    transform: translate3d(0, -20px, 0);
-}
-
-figure.effect-bubba p {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 20px 2.5em;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0, 20px, 0);
-    transform: translate3d(0, 20px, 0);
-}
-
-figure.effect-bubba:hover figcaption::before,
-figure.effect-bubba:hover figcaption::after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-figure.effect-bubba:hover h2,
-figure.effect-bubba:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-} */
 
 /*4.4. Deo nabrajanje*/
 
@@ -716,40 +465,6 @@ figure.effect-bubba:hover p {
 
 
 
-/* .team-item {
-    text-align: center;
-    background-color: #fff;
-}
-
-.team-item h3 {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.team-item .team-location {
-    color: #C5C5C5;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
-
-.team-item .team-location {
-    color: #C5C5C5;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.team-item .team-position {
-    color: #000;
-    font-size: 12px;
-}
-
-.team-item p {
-    font-size: 12px;
-    font-weight: 300;
-    color: #9C9C9C;
-    padding: 5px 10px 20px 10px;
-} */
-
 /*4.7. Contacts*/
 
 section#contact form {
@@ -839,37 +554,6 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-
-/* footer {
-    padding: 30px;
-    background-color: #000;
-}
-
-footer p {
-    color: #B7B7B7;
-    margin: 0;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1.6px;
-}
-
-footer p a {
-    color: #fff;
-}
-
-footer p a span {
-    color: #c7a17a;
-    font-size: 10px;
-    letter-spacing: 1px;
-    font-weight: 700;
-} */
 
 /*--------------------
 6. Modal
@@ -1025,68 +709,58 @@ footer p a span {
 
 
 /* Autor */
-.autor-navbar {
-    background-color: #333 !important;
-    border-bottom: none;
+#autor {
+    background: #A9A9B1;
+    padding: 140px 0;
 }
 
-.autor-navbar .navbar-nav>li>a {
-    color: white !important;
+.autor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
-
 
 .autor-slika {
-    border-radius: 20px;
-    transition: transform .4s ease, box-shadow .4s ease;
+    width: 320px;
+    border-radius: 12px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .autor-slika:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transform: scale(1.07);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
-.autor-slika {
-    width: 280px;
-    height: auto;
-    display: block;
-    margin: 100px auto 20px auto;
-    border-radius: 20px;
-    transition: transform .4s ease, box-shadow .4s ease;
+.autor-tekst p {
+    font-size: 22px;
+    margin: 6px 0;
 }
 
-.autor-box {
-    margin-top: 50px;
+.autor-tekst strong {
+    font-weight: 600;
 }
 
-.autor-slika {
-    width: 260px;
-    border-radius: 14px;
-    margin-bottom: 18px;
+@media (max-width: 768px) {
+    .autor-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
-.autor-ime {
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 10px;
+.autor-nav {
+    background: #2D2D2D !important;
+    border: none !important;
 }
 
-.btn-vise {
-    padding: 8px 22px;
-    border-radius: 25px;
-    border: none;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    transition: 0.3s ease;
+.autor-nav .nav>li>a {
+    color: #ffffff !important;
 }
 
-.btn-vise:hover {
-    background: #c7a17a;
+.autor-nav .nav>li>a:hover {
+    color: #cccccc !important;
 }
 
-.autor-info {
-    display: none;
-    margin-top: 10px;
-    font-size: 17px;
+.autor-nav .navbar-brand img {
+    filter: brightness(0) invert(1);
 }
